@@ -16,3 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/contact', function () {
+    return view('components.contact-page.index');
+});
+
+Route::get('/search', function () {
+    return view('components.search-page.index');
+});
+
+Route::prefix("admin")->name("admin")->group(function() {
+    Route::get("", function () {
+        return view('admin.index');
+    });
+});
