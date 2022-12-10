@@ -21,6 +21,11 @@ Route::get('/contact', function () {
     return view('components.contact-page.index');
 });
 
+Route::post("/contact", [\App\Http\Controllers\ContactController::class, "insertForm"]);
+
+Route::get("/contact/info", [\App\Http\Controllers\ContactController::class, "insertForm"])->name('contactInfo');
+
+
 Route::get('/search', function () {
     return view('components.search-page.index');
 });
