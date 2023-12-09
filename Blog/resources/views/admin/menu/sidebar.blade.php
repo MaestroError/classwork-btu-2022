@@ -14,10 +14,12 @@
       <li>
         <a href="#" class="nav-link text-white">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-          Dashboard
+          Menu
         </a>
       </li>
-      <li>
+
+
+      <!-- <li>
         <a href="#" class="nav-link text-white">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
           Orders
@@ -34,7 +36,12 @@
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
           Customers
         </a>
-      </li>
+      </li> -->
+
+
+
+
+      
     </ul>
     <hr>
   </div>

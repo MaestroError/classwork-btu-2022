@@ -1,7 +1,16 @@
-@extends("layout")
+<!-- resources/views/menu/index.blade.php -->
 
-@section("content")
-<h1>Home page</h1>
+@extends('layouts.menu')
 
-@includeIf("components.news.news-block")
+@section('content')
+    {{-- Define your menu items here --}}
+    @php
+        $menuItems = [
+            ['text' => 'Home', 'url' => '/', 'hasButton' => true, 'buttonText' => 'Home Button'],
+            ['text' => 'About', 'url' => '/about', 'hasButton' => false, 'buttonText' => ''],
+            // Add more menu items as needed
+        ];
+    @endphp
+
+    @parent
 @endsection

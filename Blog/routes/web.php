@@ -25,8 +25,18 @@ Route::get('/search', function () {
     return view('components.search-page.index');
 });
 
+
+// routes/web.php
+
+use App\Http\Controllers\MenuController;
+
+Route::get('/menu', [MenuController::class, 'index']);
+
+
+
 Route::prefix("admin")->name("admin")->group(function() {
     Route::get("", function () {
         return view('admin.index');
     });
+
 });
