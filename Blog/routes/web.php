@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FooterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,4 +30,6 @@ Route::prefix("admin")->name("admin")->group(function() {
     Route::get("", function () {
         return view('admin.index');
     });
+
+    Route::resource('footer', FooterController::class);
 });
